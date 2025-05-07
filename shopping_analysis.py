@@ -6,10 +6,13 @@ import streamlit as st
 import re
 from urllib.parse import quote
 import requests
+import os
+from dotenv import load_dotenv
 
-# ─── 여기에 직접 발급받은 인증 정보를 넣으세요 ───
-client_id     = "vFU_GHGD2iJ4TcdLHg4t"
-client_secret = "cdVA8fwU2Z"
+load_dotenv()  # .env 파일 읽어 환경변수로 설정
+
+client_id     = os.getenv("NAVER_CLIENT_ID")
+client_secret = os.getenv("NAVER_CLIENT_SECRET")
 
 def fetch_shopping_titles(query: str, pages: int, per_page: int):
     titles = []
