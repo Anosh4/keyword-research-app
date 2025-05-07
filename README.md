@@ -1,2 +1,4 @@
-# keyword-research-app
-keyword-research-app
+# Keyword Research App
+## 설치
+```bash
+pip install -r requirements.txt
