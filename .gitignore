@@ -1,3 +1,6 @@
+# 환경변수 팡리
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

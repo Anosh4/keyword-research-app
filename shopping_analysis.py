@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 
 load_dotenv()  # .env 파일 읽어 환경변수로 설정
 
-client_id     = os.getenv("NAVER_CLIENT_ID")
-client_secret = os.getenv("NAVER_CLIENT_SECRET")
+client_id     = "vFU_GHGD2iJ4TcdLHg4t"
+client_secret = "cdVA8fwU2Z"
 
 def fetch_shopping_titles(query: str, pages: int, per_page: int):
     titles = []
